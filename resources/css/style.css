@@ -26,13 +26,14 @@ html {
 }
 
 .box {
-  padding: 1%;
+  margin-top: 3%;
 }
 
 .box p {
   font-size: 90%;
   line-height: 145%;
   text-align: center;
+  padding: 20px;
 }
 
 /* ICON */
@@ -42,6 +43,7 @@ html {
   margin-bottom: 10px;
   color: #e67e22;
   width: auto;
+  text-align: center;
 }
 
 h1,
@@ -63,7 +65,7 @@ h2 {
   font-size: 180%;
   text-align: center;
   color: #34495e;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   letter-spacing: 1px;
 }
 
@@ -74,13 +76,13 @@ h2::after {
   content: "";
   width: 100px;
   margin: 0px auto;
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 100%;
-  margin-bottom: 15px;
+  font-size: 90%;
   color: #2c3e50;
   text-align: center;
 }
@@ -90,7 +92,7 @@ h3 {
 /* ----------------------------------------------- */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(/resources/css/img/headerBG.jpg);
   background-size: cover;
   background-position: center;
@@ -198,4 +200,104 @@ section {
   width: 70%;
   margin-left: 15%;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ----------------------------------------------- */
+/*                   Section Tow                   */
+/* ----------------------------------------------- */
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: all, 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* ----------------------------------------------- */
+/*                   Meals Section                 */
+/* ----------------------------------------------- */
+
+.section-steps {
+  background-color: #fbfbfb;
+}
+
+.step-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.step-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.work-steps {
+  margin-bottom: 50px;
+}
+
+.work-steps:last-of-type {
+  margin-bottom: 90px;
+}
+
+.work-steps div {
+  cursor: context-menu;
+  color: black;
+  border: 1px solid #e67e22;
+  display: block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 12px;
+  font-weight: 700;
+  float: left;
+  margin-right: 25px;
+  transition: all 0.2s;
+}
+
+.work-steps div:hover {
+  transform: rotate(-360deg);
+  border: 1px solid #e67e22;
+  background-color: #e67e22;
+  color: white;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
