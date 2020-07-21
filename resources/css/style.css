@@ -258,7 +258,7 @@ section {
 /* ----------------------------------------------- */
 
 .section-steps {
-  background-color: #fff;
+  background-color: #f4f5f6;
 }
 
 .step-box:first-child {
@@ -311,4 +311,33 @@ section {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* ----------------------------------------------- */
+/*                   Cities Section                */
+/* ----------------------------------------------- */
+.section-cities {
+  background-color: #fff;
+}
+
+.city_name {
+  text-align: left;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+.icon-city {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
 }
