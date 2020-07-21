@@ -107,6 +107,7 @@ header {
     url(/resources/css/img/headerBG.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -316,6 +317,7 @@ section {
 /* ----------------------------------------------- */
 /*                   Cities Section                */
 /* ----------------------------------------------- */
+
 .section-cities {
   background-color: #fff;
 }
@@ -362,4 +364,53 @@ section {
 .city-feature a:hover {
   color: #34495e;
   border-bottom: 2px solid transparent;
+}
+
+/* ----------------------------------------------- */
+/*                   Cities Section                */
+/* ----------------------------------------------- */
+
+.section-customer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),
+    url("/resources/image/customer-back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+}
+
+.section-customer h2 {
+  color: #fff;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  font-style: normal;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
 }
