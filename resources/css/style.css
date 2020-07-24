@@ -414,3 +414,66 @@ cite img {
   margin-right: 10px;
   vertical-align: middle;
 }
+
+/* ----------------------------------------------- */
+/*                    Plan Section                 */
+/* ----------------------------------------------- */
+
+.section-plans {
+  background-color: #f4f5f6;
+}
+
+.plan-box {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0px 5px 15px #cbcbcc;
+}
+
+.plan-box h3 {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: #eeeeef solid 1px;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 40%;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 7px 0px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.btn-plan {
+  background-color: #e67e22;
+  margin-bottom: 15px;
+  transition: all 0.2s;
+}
+
+.btn-plan:hover {
+  background-color: #27ae60;
+}
