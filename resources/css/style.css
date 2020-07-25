@@ -482,9 +482,6 @@ cite img {
 /*                    Form Section                 */
 /* ----------------------------------------------- */
 
-.section-form {
-}
-
 .contact-form {
   width: 60%;
   margin: 0 auto;
@@ -524,4 +521,58 @@ input[type="checkbox"] {
 
 *:focus {
   outline: none;
+}
+
+/* ----------------------------------------------- */
+/*                  Footer Section                 */
+/* ----------------------------------------------- */
+footer {
+  background-image: linear-gradient(to right, #202d3af8, #202d3af8),
+    url(/resources/image/Waimakariri.png);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a,
+.social-links li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.2s;
+}
+
+.footer-nav li a:hover,
+.social-links li a:hover {
+  color: #94acc4;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
+  line-height: 30px;
+  font-weight: 300;
 }
