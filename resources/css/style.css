@@ -477,3 +477,51 @@ cite img {
 .btn-plan:hover {
   background-color: #27ae60;
 }
+
+/* ----------------------------------------------- */
+/*                    Form Section                 */
+/* ----------------------------------------------- */
+
+.section-form {
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: solid 1px #c6cbcf;
+}
+
+textarea {
+  height: 100px;
+}
+
+.btn-form {
+  padding: 10px 30px;
+  background-color: #e67e22;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-form:hover {
+  background-color: #d35400;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
