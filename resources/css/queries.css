@@ -1,0 +1,191 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .group {
+    padding: 0 2%;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .logo {
+    height: 70px;
+    width: auto;
+  }
+
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .box p {
+    text-align: left;
+  }
+
+  .step-box {
+    margin-top: 10px;
+  }
+
+  .work-steps {
+    margin-bottom: 40px;
+  }
+
+  .btn-app img {
+    height: 40px;
+  }
+
+  .work-steps:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .app-screen {
+    width: 50%;
+  }
+
+  .step-box:last-child {
+    margin-top: 40px;
+  }
+
+  .work-steps div {
+    padding: 14px;
+  }
+
+  .icon-city {
+    width: 17px;
+    margin-right: 5px;
+  }
+
+  .city-feature {
+    font-size: 90%;
+  }
+
+  .plan-box {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .plan-price {
+    font-size: 300%;
+  }
+
+  .plan-box div {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  .group {
+    padding: 0 4%;
+  }
+
+  .plan-box div {
+    font-size: 15px;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+
+  .box p {
+    text-align: center;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .hero-text-box h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .step-box {
+    margin-top: 10px;
+  }
+
+  .work-steps {
+    margin-bottom: 40px;
+  }
+
+  .btn-app img {
+    height: 40px;
+  }
+
+  .work-steps:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .app-screen {
+    width: 30%;
+  }
+
+  .step-box:last-child {
+    margin-top: 40px;
+  }
+
+  .work-steps div {
+    padding: 14px;
+  }
+
+  .step-box:first-child {
+    text-align: center;
+  }
+
+  .city-feature {
+    font-size: 110%;
+  }
+
+  .work-steps p {
+    font-size: 20px;
+  }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
