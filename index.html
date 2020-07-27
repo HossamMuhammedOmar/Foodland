@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <!-- GRID CSS STYLE -->
     <link rel="stylesheet" href="vendors/css/grid.css" />
+
     <!-- MY CSS STYLE -->
     <link rel="stylesheet" href="resources/css/style.css" />
     <!-- MY CSS QUERY -->
@@ -20,6 +21,80 @@
     />
     <!-- ICONS -->
     <link rel="stylesheet" href="vendors/css/icofont/icofont.min.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="resources/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="resources/favicons//apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="resources/favicons//apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="resources/favicons//apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="resources/favicons//apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="resources/favicons//apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="resources/favicons//apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="resources/favicons//apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/favicons//apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="resources/favicons//android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="resources/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="resources/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <!-- HEADER -->
@@ -38,12 +113,16 @@
             class="logo-black"
           />
 
-          <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+          <ul class="main-nav js--main-nav">
+            <li><a href="#feature">Food delivery</a></li>
+            <li><a href="#work">How it works</a></li>
+            <li><a href="#city">Our cities</a></li>
+            <li><a href="#plan">Sign up</a></li>
           </ul>
+
+          <a class="mobile-nav-icon js--nav-icon">
+            <i class="icofont-listine-dots"></i>
+          </a>
         </div>
       </nav>
       <div class="hero-text-box">
@@ -51,13 +130,13 @@
           Goodbye junk food.<br />
           Hello super healthy meals.
         </h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full js--scroll-to-plan" href="#">I’m hungry</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
       </div>
     </header>
 
     <!-- SECTION ONE -->
-    <section class="section-features js--section-feature">
+    <section class="section-features js--section-feature" id="feature">
       <div class="group">
         <h2>
           Get food fast <ion-icon name="rocket-outline"></ion-icon>
@@ -71,7 +150,7 @@
         </p>
       </div>
 
-      <div class="group">
+      <div class="group js--wp-1">
         <div class="col span_1_of_4 box">
           <ion-icon class="icon" name="infinite-outline"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -189,14 +268,14 @@
       </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="work">
       <div class="group">
         <h2>How it works, Simple as 1, 2, 3</h2>
       </div>
       <div class="group">
         <div class="col span_1_of_2 step-box">
           <img
-            class="app-screen"
+            class="app-screen js--wp-2"
             src="/resources/image/app-iPhone.png"
             alt="Foodland app photo"
           />
@@ -240,7 +319,7 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="city">
       <div class="group">
         <h2>We're currently in these cities</h2>
       </div>
@@ -390,7 +469,7 @@
     </section>
 
     <!-- Section Plan -->
-    <section class="section-plans">
+    <section class="section-plans js--section-plan" id="plan">
       <div class="group">
         <h2>Start eating healthy today</h2>
       </div>
@@ -599,6 +678,9 @@
                 name="message"
                 id="message"
                 placeholder="Enter Your Message"
+                cols="30"
+                rows="5"
+                wrap="off"
               ></textarea>
             </div>
           </div>

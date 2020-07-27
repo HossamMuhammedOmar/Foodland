@@ -1,26 +1,19 @@
-/* ----------------------------------------------- */
-/*                  Basic Setup                    */
-/* ----------------------------------------------- */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
-  font-family: "Lato", sans-serif, Arial;
+  font-family: Lato, sans-serif, Arial;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   color: #34495e;
   overflow-x: hidden;
 }
-
 .clearfix {
   zoom: 1;
 }
-
 .clearfix::after {
   content: ".";
   clear: both;
@@ -28,27 +21,19 @@ html {
   height: 0;
   visibility: hidden;
 }
-/* ----------------------------------------------- */
-/*               Reusable Component                */
-/* ----------------------------------------------- */
-
 .group {
   max-width: 1140px;
   margin: 0 auto;
 }
-
 .box {
   margin-top: 3%;
 }
-
 .box p {
   font-size: 90%;
   line-height: 145%;
   text-align: center;
   padding: 20px;
 }
-
-/* ICON */
 .icon {
   font-size: 200%;
   display: block;
@@ -57,7 +42,6 @@ html {
   width: auto;
   text-align: center;
 }
-
 h1,
 h2,
 h3 {
@@ -65,14 +49,12 @@ h3 {
   text-transform: uppercase;
   word-spacing: 4px;
 }
-
 h1 {
   font-size: 240%;
   margin: 0;
-  color: white;
+  color: #fff;
   letter-spacing: 1px;
 }
-
 h2 {
   font-size: 180%;
   text-align: center;
@@ -80,29 +62,22 @@ h2 {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
-
 h2::after {
   display: block;
   height: 2px;
   background-color: #e67e22;
   content: "";
   width: 100px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 h3 {
   font-weight: 700;
   font-size: 90%;
   color: #2c3e50;
   text-align: center;
 }
-
-/* ----------------------------------------------- */
-/*                  Header Style                   */
-/* ----------------------------------------------- */
-
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(/resources/css/img/headerBG.jpg);
@@ -111,7 +86,6 @@ header {
   background-attachment: fixed;
   height: 100vh;
 }
-
 .hero-text-box {
   position: absolute;
   width: 1140px;
@@ -119,23 +93,17 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* ----------------------------------------------- */
-/*                  Button Style                   */
-/* ----------------------------------------------- */
-
 .btn:link,
 .btn:visited {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
-  color: white;
+  color: #fff;
   text-align: center;
   border-radius: 200px;
   margin-top: 20px;
 }
-
 .btn-full:link,
 .btn-full:visited {
   background-color: #e67e22;
@@ -143,29 +111,20 @@ header {
   border: solid 1px #e67e22;
   transition: all, 0.3s;
 }
-
 .btn-full:hover {
   background-color: #cf6d17;
   border: solid 1px #cf6d17;
 }
-
 .btn-ghost:link,
 .btn-ghost:visited {
-  color: white;
+  color: #fff;
   border: solid 1px #27ae60;
   transition: all, 0.3s;
 }
-
 .btn-ghost:hover {
   background-color: #27ae60;
   border: solid 1px #27ae60;
 }
-
-/* ----------------------------------------------- */
-/*                Navigation Style                 */
-/* ----------------------------------------------- */
-
-/* LOGO */
 .logo {
   cursor: pointer;
   height: 80px;
@@ -173,46 +132,38 @@ header {
   float: left;
   margin-top: 25px;
 }
-
 .logo-black {
   cursor: pointer;
   height: 50px;
   width: auto;
   float: left;
-  margin-top: 0px;
+  margin-top: 0;
   display: none;
   padding: 5px;
 }
-
 .main-nav {
   float: right;
   list-style: none;
   margin-top: 55px;
 }
-
 .main-nav li {
   display: inline-block;
   margin-left: 40px;
 }
-
 .main-nav li a:link,
 .main-nav li a:visited {
   text-decoration: none;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   font-size: 90%;
-  padding: 8px 0px;
+  padding: 8px 0;
   border-bottom: solid 2px transparent;
   transition: all 0.2s;
 }
-
 .main-nav li a:hover {
   border-bottom: solid 2px #e67e22;
-  padding: 8px 0px;
+  padding: 8px 0;
 }
-
-/* STICKY */
-
 .sticky {
   position: fixed;
   top: 0;
@@ -222,32 +173,23 @@ header {
   box-shadow: 0 2px 2px #bdc3c7;
   z-index: 9999;
 }
-
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
   color: #202d3a;
-  padding: 17px 0px;
+  padding: 17px 0;
 }
-
 .sticky .logo {
   display: none;
 }
-
 .sticky .logo-black {
   display: block;
 }
-
 .sticky .main-nav {
   margin: 18px 0;
 }
-
-/* ----------------------------------------------- */
-/*                   Section One                   */
-/* ----------------------------------------------- */
 section {
-  padding: 80px 0px;
+  padding: 80px 0;
 }
-
 .long-copy {
   line-height: 145%;
   width: 70%;
@@ -255,33 +197,24 @@ section {
   text-align: center;
   margin-bottom: 20px;
 }
-
-/* ----------------------------------------------- */
-/*                   Section Tow                   */
-/* ----------------------------------------------- */
-
 .section-meals {
   padding: 0;
 }
-
 .meals-showcase {
   list-style: none;
   width: 100%;
 }
-
 .meals-showcase li {
   display: block;
   float: left;
   width: 25%;
 }
-
 .meal-photo {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #000;
 }
-
 .meal-photo img {
   opacity: 0.7;
   width: 100%;
@@ -289,46 +222,34 @@ section {
   transform: scale(1.15);
   transition: all, 0.5s;
 }
-
 .meal-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
 }
-
-/* ----------------------------------------------- */
-/*                   Meals Section                 */
-/* ----------------------------------------------- */
-
 .section-steps {
   background-color: #f4f5f6;
 }
-
 .step-box:first-child {
   text-align: right;
   padding-right: 3%;
   margin-top: 30px;
 }
-
 .step-box:last-child {
   padding-left: 3%;
   margin-top: 70px;
 }
-
 .app-screen {
   width: 40%;
 }
-
 .work-steps {
   margin-bottom: 50px;
 }
-
 .work-steps:last-of-type {
   margin-bottom: 90px;
 }
-
 .work-steps div {
   cursor: context-menu;
-  color: black;
+  color: #000;
   border: 1px solid #e67e22;
   display: block;
   border-radius: 50%;
@@ -341,58 +262,44 @@ section {
   margin-right: 25px;
   transition: all 0.2s;
 }
-
 .work-steps div:hover {
   transform: rotate(-360deg);
   border: 1px solid #e67e22;
   background-color: #e67e22;
-  color: white;
+  color: #fff;
 }
-
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
 }
-
-/* ----------------------------------------------- */
-/*                   Cities Section                */
-/* ----------------------------------------------- */
-
 .section-cities {
   background-color: #fff;
 }
-
 .city_name {
   text-align: left;
   font-weight: 300;
   margin-bottom: 15px;
 }
-
 .box img {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
-
 .city-feature {
   margin-bottom: 10px;
 }
-
 .icon-city {
   display: inline-block;
   width: 30px;
   text-align: center;
   color: #e67e22;
   font-size: 100%;
-
-  /* Algin font with icon */
   line-height: 100%;
   vertical-align: middle;
   margin-top: -3px;
   margin-right: 10px;
 }
-
 .city-feature a:link,
 .city-feature a:visited {
   color: #e67e22;
@@ -401,29 +308,21 @@ section {
   border-bottom: 2px solid #e67e22;
   transition: all, 0.2s;
 }
-
 .city-feature a:hover {
   color: #34495e;
   border-bottom: 2px solid transparent;
 }
-
-/* ----------------------------------------------- */
-/*                   Cities Section                */
-/* ----------------------------------------------- */
-
 .section-customer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),
-    url("/resources/image/customer-back.jpg");
+    url(/resources/image/customer-back.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   color: #fff;
 }
-
 .section-customer h2 {
   color: #fff;
 }
-
 blockquote {
   padding: 2%;
   font-style: italic;
@@ -431,7 +330,6 @@ blockquote {
   position: relative;
   margin-top: 40px;
 }
-
 blockquote::before {
   content: "\201C";
   font-size: 500%;
@@ -440,14 +338,12 @@ blockquote::before {
   top: -5px;
   left: -5px;
 }
-
 cite {
   font-size: 90%;
   margin-top: 25px;
   font-style: normal;
   display: block;
 }
-
 cite img {
   height: 45px;
   border-radius: 50%;
@@ -455,81 +351,59 @@ cite img {
   margin-right: 10px;
   vertical-align: middle;
 }
-
-/* ----------------------------------------------- */
-/*                    Plan Section                 */
-/* ----------------------------------------------- */
-
 .section-plans {
   background-color: #f4f5f6;
 }
-
 .plan-box {
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
   width: 90%;
   margin-left: 5%;
-  box-shadow: 0px 5px 15px #cbcbcc;
+  box-shadow: 0 5px 15px #cbcbcc;
 }
-
 .plan-box h3 {
   margin-bottom: 15px;
   text-align: left;
 }
-
 .plan-box div {
   padding: 15px;
   border-bottom: #eeeeef solid 1px;
 }
-
 .plan-price {
   font-size: 300%;
   margin-bottom: 10px;
   color: #e67e22;
 }
-
 .plan-price span {
   font-size: 40%;
 }
-
 .plan-price-meal {
   font-size: 80%;
 }
-
 .plan-box ul {
   list-style: none;
 }
-
 .plan-box ul li {
-  padding: 7px 0px;
+  padding: 7px 0;
 }
-
 .plan-box div:last-child {
   text-align: center;
   border: 0;
 }
-
 .btn-plan {
   background-color: #e67e22;
   margin-bottom: 15px;
   transition: all 0.2s;
 }
-
 .btn-plan:hover {
   background-color: #27ae60;
 }
-
-/* ----------------------------------------------- */
-/*                    Form Section                 */
-/* ----------------------------------------------- */
-
 .contact-form {
   width: 60%;
   margin: 0 auto;
 }
-
-input[type="text"],
 input[type="email"],
+input[type="text"],
 select,
 textarea {
   width: 100%;
@@ -537,36 +411,27 @@ textarea {
   border-radius: 3px;
   border: solid 1px #c6cbcf;
 }
-
 textarea {
   height: 100px;
 }
-
 .btn-form {
   padding: 10px 30px;
   background-color: #e67e22;
   border: 0;
   border-radius: 20px;
-  color: white;
+  color: #fff;
   cursor: pointer;
   transition: all 0.2s;
 }
-
 .btn-form:hover {
   background-color: #d35400;
 }
-
 input[type="checkbox"] {
   margin: 10px 5px 10px 0;
 }
-
-*:focus {
-  outline: none;
+:focus {
+  outline: 0;
 }
-
-/* ----------------------------------------------- */
-/*                  Footer Section                 */
-/* ----------------------------------------------- */
 footer {
   background-image: linear-gradient(to right, #202d3af8, #202d3af8),
     url(/resources/image/Waimakariri.png);
@@ -574,46 +439,49 @@ footer {
   background-position: center;
   padding: 30px;
 }
-
 .footer-nav {
   list-style: none;
   float: left;
 }
-
 .social-links {
   list-style: none;
   float: right;
 }
-
 .footer-nav li,
 .social-links li {
   display: inline-block;
   margin-right: 20px;
 }
-
 .footer-nav li:last-child,
 .social-links li:last-child {
   margin-right: 0;
 }
-
 .footer-nav li a,
 .social-links li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   transition: all 0.2s;
 }
-
 .footer-nav li a:hover,
 .social-links li a:hover {
   color: #94acc4;
 }
-
 footer p {
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 90%;
   margin-top: 30px;
   line-height: 30px;
   font-weight: 300;
+}
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
 }
