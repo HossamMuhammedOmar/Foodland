@@ -1,5 +1,5 @@
 # ⚡️ Welcome To Foodland Website ⚡️
- - HTML - CSS - JS
+ - HTML 🔴 - CSS 🔵 - JS 🟠 
  
 ![2uum21fjVz](https://user-images.githubusercontent.com/49618856/88632276-a8ec4000-d0b3-11ea-815d-17b19c3ee685.gif)
 
@@ -10,6 +10,8 @@
 
  live preview
 https://infallible-bhaskara-f9e717.netlify.app/
+
+### Deploy With Netlify 🔷
 
 #
 ![giphy](https://user-images.githubusercontent.com/49618856/88633291-1187ec80-d0b5-11ea-9d42-b05fa3d259a3.gif)
